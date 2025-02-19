@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        th {
+            text-align: left;
+        }
+        .header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: blue;
+        }
+        .checkbox-group, .radio-group {
+            display: flex;
+            align-items: center;
+        }
+        .submit-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Registration form</div>
+        <form>
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <td><input type="text" name="first_name" required></td>
+                </tr>
+                <tr>
+                    <th>Last Name</th>
+                    <td><input type="text" name="last_name" required></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <th>Password</th>
+                    <td><input type="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <th>Re-enter Password</th>
+                    <td><input type="password" name="re_password" required></td>
+                </tr>
+                <tr>
+                    <th>Gender:</th>
+                    <td class="radio-group">
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <th>Age:</th>
+                    <td><input type="number" name="age" required></td>
+                </tr>
+                <tr>
+                    <th>Phone Number</th>
+                    <td><input type="tel" name="phone" required></td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td><textarea name="address" rows="3" required></textarea></td>
+                </tr>
+                <tr>
+                    <th>State</th>
+                    <td><input type="text" name="state" required></td>
+                </tr>
+                <tr>
+                    <th>Country</th>
+                    <td>
+                        <select name="country" required>
+                            <option value="">Choose your country</option>
+                            <option value="india">India</option>
+                            <option value="usa">USA</option>
+                            <option value="uk">UK</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Languages known</th>
+                    <td class="checkbox-group">
+                        <input type="checkbox" name="language" value="english"> English
+                        <input type="checkbox" name="language" value="kannada"> Kannada
+                        <input type="checkbox" name="language" value="hindi"> Hindi
+                        <input type="checkbox" name="language" value="telugu"> Telugu
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="declaration" required> Hereby I declare all the given details are true
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="#">Log in to <span style="color: blue;">Ethnus</span> website</a>
+                    </td>
+                </tr>
+            </table>
+            <div class="submit-container">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

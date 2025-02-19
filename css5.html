@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Page</title>
+    <style>
+        body {
+            background-color: #fcfcf8; /* Matched background color */
+            font-family: Georgia, serif;
+            margin: 20px;
+        }
+
+        .container {
+            width: 70%;
+            margin: auto;
+            border: 1px dotted black;
+            padding: 20px;
+            background-color: #b5b51e; /* Same as body to blend */
+        }
+
+        .sidebar {
+            float: left;
+            width: 150px;
+            padding: 10px;
+        }
+
+        .sidebar a {
+            display: block;
+            width: 120px;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-decoration: none;
+            background-color: white;
+            border-right: 10px solid rgb(0, 0, 0); /* Matches black bar in the image */
+            text-align: center;
+            font-weight: bold;
+            color: black;
+        }
+        
+        .sidebar a:first-child {
+            color: purple; /* Home Page in purple */
+        }
+
+        .sidebar a:not(:first-child) {
+            color: blue; /* Musings, My Town, Links in blue */
+        }
+        .content {
+            margin-left: 180px;
+        }
+
+        h1 {
+            color: #660066; /* Dark purple */
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #660066;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #660066;
+        }
+
+        em {
+            font-style: italic;
+            color: #660066; /* Dark purple for emphasis */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <a href="#">Home page</a>
+        <a href="#">Musings</a>
+        <a href="#">My town</a>
+        <a href="#">Links</a>
+    </div>
+
+    <div class="content">
+        <h1>My first styled page</h1>
+        <p>Welcome to my styled page!</p>
+        <p>It lacks images, but at least it has style. And it has links, even if they don't go anywhere...</p>
+        <p>There should be more here, but I don't know what yet.</p>
+        <hr>
+        <p><em>Made 5 April 2004<br>by myself.</em></p>
+    </div>
+</div>
+
+</body>
+</html>

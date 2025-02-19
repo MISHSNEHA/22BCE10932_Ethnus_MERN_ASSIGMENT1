@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: #b33b5d; /* Matches the background color */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #73233a; /* Dark maroon container */
+            padding: 25px;
+            border-radius: 10px;
+            width: 420px;
+            color: white;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            display: block; /* Ensures each label is on a new line */
+            margin-bottom: 5px;
+        }
+
+        input, select, textarea {
+            width: calc(100% - 20px); /* Makes sure all fields align perfectly */
+            padding: 12px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .gender-group {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        textarea {
+            height: 60px;
+            resize: none;
+        }
+
+        .register-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .register-btn:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+
+            <label>Gender:</label>
+            <div class="gender-group">
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male">Male</label>
+
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">Female</label>
+
+                <input type="radio" name="gender" value="other" id="other">
+                <label for="other">Other</label>
+            </div>
+
+            <label for="language">Language:</label>
+            <select id="language">
+                <option>Select language</option>
+                <option>English</option>
+                <option>Spanish</option>
+                <option>French</option>
+            </select>
+
+            <label for="zipcode">Zip Code:</label>
+            <input type="text" id="zipcode" required>
+
+            <label for="about">About:</label>
+            <textarea id="about" placeholder="Write about yourself..."></textarea>
+
+            <button type="submit" class="register-btn">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>

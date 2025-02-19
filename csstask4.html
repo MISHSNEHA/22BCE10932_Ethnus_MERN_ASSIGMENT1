@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoverable Sidenav Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Outer box enclosing everything */
+        .container {
+            width: 70%;
+            height: 400px;
+            border: 2px solid black;
+            margin: auto;
+            padding: 20px;
+            position: relative;
+        }
+
+        /* Sidebar */
+        .sidenav {
+            position: absolute;
+            left: 10px;
+            top: 50px;
+            width: 60px;
+        }
+
+        /* Sidebar Buttons */
+        .sidenav a {
+            display: block;
+            width: 60px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* Different Colors */
+        .sidenav .blue { background-color: blue; }
+        .sidenav .green { background-color: green; }
+        .sidenav .red { background-color: red; }
+        .sidenav .gray { background-color: gray; }
+
+        /* Hover Effect */
+        .sidenav a:hover {
+            width: 200px;
+        }
+
+        /* Content Styling */
+        .content {
+            margin-left: 80px; /* Ensures text is clear of the sidebar */
+        }
+
+        .content h2 {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <div class="sidenav">
+            <a href="#" class="green"></a>
+            <a href="#" class="blue"></a>
+            <a href="#" class="red"></a>
+            <a href="#" class="gray"></a>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <h2>Hoverable Sidenav Buttons</h2>
+            <p>Hover over the buttons in the left side navigation to open them.</p>
+        </div>
+    </div>
+
+</body>
+</html>

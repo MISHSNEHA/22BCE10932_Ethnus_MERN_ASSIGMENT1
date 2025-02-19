@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Builderz - Construction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        /* Header Section */
+        .header {
+            background-color: #f5b301;
+            padding: 10px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: black;
+        }
+
+        .header .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .header .contact-info {
+            display: flex;
+            gap: 30px;
+            font-size: 14px;
+        }
+
+        .header .contact-info div {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #0c2340;
+            padding: 10px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .quote-btn {
+            background-color: white;
+            color: black;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+.hero {
+    background: url('WORKERS2.jpg') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the full area */
+    background-position: center center; /* Centers the image */
+    background-attachment: fixed; /* Creates a parallax effect */
+    height: 700px; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+        .hero h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .hero button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #f5b301;
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Services Section */
+        .services {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 40px;
+            background-color: #0c2340;
+            color: white;
+        }
+
+        .service-box {
+            width: 30%;
+            text-align: center;
+            background-color: #f5b301;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .service-box h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .service-box p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">Builderz</div>
+        <div class="contact-info">
+            <div>📅 Mon - Fri: 8:00 - 18:00</div>
+            <div>📞 +123 456 789</div>
+            <div>📧 info@example.com</div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <a href="#" class="quote-btn">Get A Quote</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>We Are Professional<br>For Your Dream Project</h1>
+        <button>Get A Quote</button>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services">
+        <div class="service-box">
+            <h3>👷‍♂️ Expert Worker</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="service-box">
+            <h3>🏗️ Quality Work</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="service-box">
+            <h3>📞 24/7 Support</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+
+</body>
+</html>
