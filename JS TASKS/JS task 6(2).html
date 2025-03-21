@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .login-container {
+            background: rgb(240, 239, 239);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+        }
+
+        /* Instagram-like font for heading */
+        .login-container h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .input-box {
+            position: relative;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 10px 40px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .input-box i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: gray;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .login-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        .remember-forgot a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .register-link {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .register-link a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .register-link a:hover,
+        .remember-forgot a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Instagram</h2>
+        <form>
+            <div class="input-box">
+                <i>👤</i>
+                <input type="text" placeholder="Username" required>
+            </div>
+
+            <div class="input-box">
+                <i>🔒</i>
+                <input type="password" placeholder="Password" required>
+            </div>
+
+            <button type="submit" class="login-btn">Log in</button>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+        </form>
+
+        <div class="register-link">
+            Don't have an account? <a href="#">Sign up here.</a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        form {
+            width: 50%;
+            background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: blue;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 8px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .error {
+            color: red;
+            font-weight: bold;
+            font-size: 12px;
+            padding-left: 5px;
+        }
+
+        .gender {
+            width: auto;
+        }
+
+        .languages {
+            text-align: left;
+        }
+
+        .button {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            border: 2px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        .button:hover {
+            background-color: darkred;
+        }
+
+        .link {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        .checkbox-text {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>Registration form</h2>
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text"></td>
+                <td class="error">POOR</td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text"></td>
+                <td class="error">POOR</td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email"></td>
+                <td class="error">POOR</td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password"></td>
+                <td class="error">POOR</td>
+            </tr>
+            <tr>
+                <td>Re-enter Password:</td>
+                <td><input type="password"></td>
+                <td class="error">POOR OR MISMATCH</td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" class="gender"> Male
+                    <input type="radio" name="gender" class="gender"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="number"></td>
+                <td class="error">POOR</td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="tel"></td>
+                <td class="error">POOR</td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><textarea rows="4"></textarea></td>
+                <td class="error">POOR</td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td><input type="text"></td>
+                <td class="error">POOR</td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>
+                    <select>
+                        <option>Choose your country</option>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>Australia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Languages known:</td>
+                <td class="languages">
+                    <input type="checkbox"> English
+                    <input type="checkbox"> Kannada
+                    <input type="checkbox"> Hindi
+                    <input type="checkbox"> Telugu
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox"> <span class="checkbox-text">Hereby I declare all the given details are true</span>
+                </td>
+            </tr>
+        </table>
+
+        <p>Log in to <a href="#" class="link">Ethnus</a> website</p>
+
+        <button type="submit" class="button">REGISTER</button>
+    </form>
+
+</body>
+</html>
